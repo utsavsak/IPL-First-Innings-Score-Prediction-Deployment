@@ -3,8 +3,8 @@ import pandas as pd
 import pickle
 
 # Loading the dataset
-df = pd.read_csv('ipl.csv')
-
+path=r"https://drive.google.com/file/d/1-0EtSN8zV5RKmhRV8-JALfmupc7Db03e/view?usp=drivesdk"
+df=pd.read_csv(path)
 # --- Data Cleaning ---
 # Removing unwanted columns
 columns_to_remove = ['mid', 'venue', 'batsman', 'bowler', 'striker', 'non-striker']
